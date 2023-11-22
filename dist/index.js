@@ -30377,7 +30377,8 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(9093);
 const github = __nccwpck_require__(5942);
-const fs = __nccwpck_require__(3292);
+const { readFile } = __nccwpck_require__(3292);
+const { existsSync } = __nccwpck_require__(7147);
 
 async function upload() {
   if (!fs.existsSync('codeyet.json')) {
