@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const fs = require('fs/promises');
+const { readFile } = require('fs/promises');
+const { existsSync } = require('fs');
 
 async function upload() {
   if (!fs.existsSync('codeyet.json')) {
