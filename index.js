@@ -9,7 +9,7 @@ async function upload() {
     return;
   }
 
-  const metricsContent = await fs.readFile('codeyet.json', 'utf8');
+  const metricsContent = await readFile('codeyet.json', 'utf8');
   const metrics = JSON.parse(metricsContent);
   console.log(metrics);
 }
