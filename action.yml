@@ -1,0 +1,9 @@
+name: 'CodeYet Action'
+description: 'Upload metrics to CodeYet'
+inputs:
+  token:
+    description: 'CodeYet Token'
+    required: true
+runs:
+  using: 'node20'
+  main: 'index.js'
