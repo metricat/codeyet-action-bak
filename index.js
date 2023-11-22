@@ -4,7 +4,7 @@ const { readFile } = require('fs/promises');
 const { existsSync } = require('fs');
 
 async function upload() {
-  if (!fs.existsSync('codeyet.json')) {
+  if (!existsSync('codeyet.json')) {
     console.log('No codeyet.json file found');
     return;
   }

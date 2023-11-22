@@ -30381,7 +30381,7 @@ const { readFile } = __nccwpck_require__(3292);
 const { existsSync } = __nccwpck_require__(7147);
 
 async function upload() {
-  if (!fs.existsSync('codeyet.json')) {
+  if (!existsSync('codeyet.json')) {
     console.log('No codeyet.json file found');
     return;
   }
